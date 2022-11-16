@@ -3,16 +3,19 @@ package Prova;
 import javax.xml.crypto.Data;
 
 public class Pet extends Cliente {
+    private String especie;
     private int codigo;
     private String apelido;
     private String sexo;
     private int idade;
     private String tiporacao;
-    private int peso;
-    private Data dataVenda;
+    private int qtdracao;
+    private float peso;
     private String pelo;
     private String domesticado;
     private String asas;
+    private Data dataVenda;
+    private String status;
 
     public int getCodigo() {
         return codigo;
@@ -54,11 +57,11 @@ public class Pet extends Cliente {
         this.tiporacao = tiporacao;
     }
 
-    public int getPeso() {
+    public float getPeso() {
         return peso;
     }
 
-    public void setPeso(int peso) {
+    public void setPeso(float peso) {
         this.peso = peso;
     }
 
@@ -92,5 +95,29 @@ public class Pet extends Cliente {
 
     public void setAsas(String asas) {
         this.asas = asas;
+    }
+
+    public String getEspecie() {
+        return especie;
+    }
+
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public int getQtdracao() {
+        return qtdracao;
+    }
+
+    public void setQtdracao(int qtdracao) {
+        this.qtdracao = qtdracao;
     }
 }
